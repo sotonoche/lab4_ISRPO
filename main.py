@@ -6,7 +6,7 @@ def get_data(path):
         f = open(file=path, mode='r')
         arr = [x.strip('\n') for x in f]
     except FileNotFoundError:
-        return 'File path is incorrect. Fix this'
+        return 'ERROR! Path isn\'t correct'
     return arr
 
 # берем список, символ разделения и количество столбцов.
